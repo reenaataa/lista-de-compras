@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="/img/basket-favicon.png" type="image/x-icon">
+    <title>Lista de Compras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&family=Numans&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="./styles.css"/>
+    <script src="index.js" type="module"></script>
+  </head>
+
+  <body>
+    <main>
+      <button id="nova-lista" class="novaLista">Nova Lista</button>
+
+      <img src="./img/basket-by-marisa-dengate.png" alt="cesta de compras ilustrada por Marisa Dengate" title="Ilustração por Marisa Dengate"/>
+
+      <form>
+        <input class="input-item" id="input-item" type="text" placeholder="Digite o item que deseja adicionar à lista"/>
+        <button class="button-item" id="adicionar-item" type="button">Salvar item</button>
+      </form>
+
+      <div class="container-lista">
+        <h2>Lista de Compras</h2>
+        <hr/>
+        <ul id="lista-de-compras"></ul>
+        <p class="empty-list-message" id="mensagem-compras">Não há nenhum item na lista no momento.</p>
+      </div>
+
+      <div class="container-lista">
+        <h2>Itens Comprados</h2>
+        <hr/>
+        <ul id="itens-comprados"></ul>
+          <p class="empty-list-message" id="mensagem-comprados">Não há nenhum item comprado no momento.</p>
+      </div>
+    </main>
+
+    <footer>
+        <button class="infoBtn">!</button>
+        <div class="infoMenu">
+          <ul>
+            <li><a href="https://github.com/reenaataa/" rel="noopener noreferrer" target="_blank">GitHub</a></li>
+            <li><a href="https://marisadengate.com/" rel="noopener noreferrer" target="_blank">Marisa Dengate</a></li>
+          </ul>
+        </div>
+    </footer>
+  </body>
+</html>
