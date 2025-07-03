@@ -31,6 +31,10 @@
     background-color: #fff9ed;
 }
 
+::selection {
+    background-color: var(--rosa);
+    color: var(--marrom);
+}
 
 body {
     background: var(--background);
@@ -68,6 +72,12 @@ main {
     top: 10px;
 }
 
+img {
+    width: 230px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
 h2 {
     font-family: var(--fonte-titulo);
     color: var(--laranja);
@@ -91,17 +101,6 @@ p {
     line-height: 24px;
     text-align: left;
     cursor: default;
-}
-
-img {
-    width: 230px;
-    user-select: none;
-    -webkit-user-select: none;
-}
-
-::selection {
-    background-color: var(--rosa);
-    color: var(--marrom);
 }
 
 .input-item {
@@ -252,6 +251,8 @@ footer {
 .infoMenu a:hover {
     text-decoration: underline;
 }
+
+/* MEDIA QUERY */
 
 @media screen and (max-width: 600px) {
     main {
